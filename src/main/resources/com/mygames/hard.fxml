@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="350.0" prefWidth="300.0" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mygames.HardController">
+    <children>
+      <ProgressBar fx:id="timer" prefWidth="200.0" progress="0.0" style="-fx-accent: red;" />
+      <StackPane>
+        <Rectangle fx:id="colorRectangle" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="75.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+        <Text fx:id="displayText" />
+        <Text fx:id="scoreText" translateY="55.0" />
+      </StackPane>
+      <GridPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="175.0" prefWidth="200.0" translateY="20.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="button4" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Button4Click" style="-fx-background-color: mediumpurple; -fx-border-color: Black;" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Button fx:id="button3" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Button3Click" style="-fx-background-color: mediumorchid; -fx-border-color: Black;" GridPane.rowIndex="5" />
+            <Button fx:id="button7" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Button7Click" style="-fx-background-color: darkviolet; -fx-border-color: Black;" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Button fx:id="button9" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Button9Click" style="-fx-background-color: darkslateblue; -fx-border-color: Black;" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+            <Button fx:id="button5" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Button5Click" style="-fx-background-color: darkorchid; -fx-border-color: Black;" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Button fx:id="button8" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Button8Click" style="-fx-background-color: blueviolet; -fx-border-color: Black;" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <Button fx:id="button$" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Button$Click" style="-fx-background-color: cornflowerblue; -fx-border-color: Black;" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Button fx:id="buttonZ" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#ButtonZClick" style="-fx-background-color: skyblue; -fx-border-color: Black;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Button fx:id="button0" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Button0Click" style="-fx-background-color: royalblue; -fx-border-color: Black;" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Button fx:id="button2" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Button2Click" style="-fx-background-color: dodgerblue; -fx-border-color: Black;" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+            <Button fx:id="button1" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Button1Click" style="-fx-background-color: deepskyblue; -fx-border-color: Black;" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <Button fx:id="buttonY" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#ButtonYClick" style="-fx-background-color: lightskyblue; -fx-border-color: Black;" GridPane.rowIndex="4" />
+            <Button fx:id="buttonT" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#ButtonTClick" style="-fx-background-color: greenyellow; -fx-border-color: Black;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button fx:id="buttonX" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#ButtonXClick" style="-fx-background-color: green; -fx-border-color: Black;" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            <Button fx:id="buttonW" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#ButtonWClick" style="-fx-background-color: forestgreen; -fx-border-color: Black;" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <Button fx:id="buttonU" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#ButtonUClick" style="-fx-background-color: lawngreen; -fx-border-color: Black;" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Button fx:id="buttonV" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#ButtonVClick" style="-fx-background-color: chartreuse; -fx-border-color: Black;" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Button fx:id="buttonS" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#ButtonSClick" style="-fx-background-color: aquamarine; -fx-border-color: Black;" GridPane.rowIndex="3" />
+            <Button fx:id="buttonR" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#ButtonRClick" style="-fx-background-color: palegoldenrod; -fx-border-color: Black;" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <Button fx:id="buttonM" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#ButtonMClick" style="-fx-background-color: lightyellow; -fx-border-color: Black;" GridPane.rowIndex="2" />
+            <Button fx:id="buttonP" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#ButtonPClick" style="-fx-background-color: lightgoldenrodyellow; -fx-border-color: Black;" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Button fx:id="buttonQ" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#ButtonQClick" style="-fx-background-color: lemonchiffon; -fx-border-color: Black;" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Button fx:id="buttonN" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#ButtonNClick" prefWidth="33.0" style="-fx-background-color: cornsilk; -fx-border-color: Black;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="buttonO" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#ButtonOClick" style="-fx-background-color: beige; -fx-border-color: Black;" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button fx:id="buttonI" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#ButtonIClick" style="-fx-background-color: peachpuff; -fx-border-color: Black;" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="buttonG" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#ButtonGClick" style="-fx-background-color: papayawhip; -fx-border-color: Black;" GridPane.rowIndex="1" />
+            <Button fx:id="buttonJ" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#ButtonJClick" style="-fx-background-color: orange; -fx-border-color: Black;" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button fx:id="buttonK" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#ButtonKClick" style="-fx-background-color: darkorange; -fx-border-color: Black;" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <Button fx:id="buttonL" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#ButtonLClick" style="-fx-background-color: coral; -fx-border-color: Black;" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <Button fx:id="buttonH" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#ButtonHClick" style="-fx-background-color: bisque; -fx-border-color: Black;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="butttonA" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#ButtonAClick" style="-fx-background-color: hotpink; -fx-border-color: Black;" />
+            <Button fx:id="buttonD" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#ButtonDClick" style="-fx-background-color: firebrick; -fx-border-color: Black;" GridPane.columnIndex="3" />
+            <Button fx:id="buttonB" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#ButtonBClick" style="-fx-background-color: deeppink; -fx-border-color: Black;" GridPane.columnIndex="1" />
+            <Button fx:id="buttonF" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#ButtonFClick" style="-fx-background-color: darkred; -fx-border-color: Black;" GridPane.columnIndex="5" />
+            <Button fx:id="buttonC" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#ButtonCClick" style="-fx-background-color: Crimson; -fx-border-color: Black;" GridPane.columnIndex="2" />
+            <Button fx:id="buttonE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#ButtonEClick" style="-fx-background-color: brown; -fx-border-color: Black;" GridPane.columnIndex="4" />
+         </children>
+      </GridPane>
+        <Button fx:id="secondaryButton" onAction="#switchToPrimary" text="Home" translateY="10.0" />
+    </children>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</VBox>

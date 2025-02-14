@@ -3,14 +3,14 @@ package com.mygames;
 import java.util.ArrayList;
 import javafx.scene.paint.Color;
 
-public class Logic {
+public class EasyLogic {
 
-    private final SecondaryController controller;
+    private final EasyController controller;
     private int score = 0;
     private ArrayList<Character> gameKey = new ArrayList<>();
     private int currentIndex = 0;
 
-    public Logic(SecondaryController controller) {
+    public EasyLogic(EasyController controller) {
         this.controller = controller;
     }
 
@@ -39,10 +39,10 @@ public class Logic {
                             controller.updateRectangleColor(Color.GREEN);
                             break;
                     }
-                    Thread.sleep(500);
+                    Thread.sleep(750);
 
                     controller.updateRectangleColor(Color.BLACK);
-                    Thread.sleep(100); 
+                    Thread.sleep(300); 
                 }
                 controller.updateRectangleColor(Color.WHITE);
             } catch (InterruptedException e) {

@@ -1,7 +1,6 @@
 package com.mygames;
 
 import java.io.IOException;
-
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -14,7 +13,7 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("primary"), 1000, 1000);
+        scene = new Scene(loadFXML("home"), 750, 750);
         stage.setScene(scene);
         stage.show();
     }

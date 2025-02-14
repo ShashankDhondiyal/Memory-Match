@@ -6,7 +6,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
 
-public class SecondaryController {
+public class EasyController {
 
     @FXML
     private Text displayText;
@@ -17,17 +17,17 @@ public class SecondaryController {
     @FXML
     private Rectangle colorRectangle;
 
-    private Logic logic;
+    private EasyLogic logic;
 
     @FXML
     public void initialize() {
-        logic = new Logic(this);
+        logic = new EasyLogic(this);
         logic.generateRandomNumber();
     }
 
     @FXML
     private void switchToPrimary() throws IOException {
-        App.setRoot("primary");
+        App.setRoot("home");
     }
 
     @FXML

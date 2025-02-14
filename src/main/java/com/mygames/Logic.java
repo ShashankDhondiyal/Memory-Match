@@ -7,7 +7,7 @@ public class Logic {
 
     private final SecondaryController controller;
     private int score = 0;
-    private ArrayList<Integer> gameKey = new ArrayList<>();
+    private ArrayList<Character> gameKey = new ArrayList<>();
     private int currentIndex = 0;
 
     public Logic(SecondaryController controller) {
@@ -15,26 +15,27 @@ public class Logic {
     }
 
     public void generateRandomNumber() {
-        int randomNumber = (int)(Math.random() * 4) + 1;
-        gameKey.add(randomNumber);
+        char randomChar = (char) ('1' + (int)(Math.random() * 4));
+        gameKey.add(randomChar);
         displaySequence();
     }
 
     private void displaySequence() {
+        controller.updateScoreText("Score: " + score);
         new Thread(() -> {
             try {
-                for (int number : gameKey) {
-                    switch (number) {
-                        case 1:
+                for (char ch : gameKey) {
+                    switch (ch) {
+                        case '1':
                             controller.updateRectangleColor(Color.RED);
                             break;
-                        case 2:
+                        case '2':
                             controller.updateRectangleColor(Color.YELLOW);
                             break;
-                        case 3:
+                        case '3':
                             controller.updateRectangleColor(Color.BLUE);
                             break;
-                        case 4:
+                        case '4':
                             controller.updateRectangleColor(Color.GREEN);
                             break;
                     }
@@ -50,12 +51,11 @@ public class Logic {
         }).start();
     }
 
-    public void check(int num) {
-        if (num == gameKey.get(currentIndex)) {
+    public void check(char ch) {
+        if (ch == gameKey.get(currentIndex)) {
             currentIndex++;
             if (currentIndex == gameKey.size()) {
                 score++;
-                controller.updateScoreText("Score: " + score);
                 currentIndex = 0;
                 generateRandomNumber();
             }

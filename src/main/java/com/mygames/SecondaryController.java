@@ -32,22 +32,22 @@ public class SecondaryController {
 
     @FXML
     private void ButtonRedClick() {
-        logic.check(1);
+        logic.check('1');
     }
 
     @FXML
     private void ButtonYellowClick() {
-        logic.check(2);
+        logic.check('2');
     }
 
     @FXML
     private void ButtonGreenClick() {
-        logic.check(3);
+        logic.check('3');
     }
 
     @FXML
     private void ButtonBlueClick() {
-        logic.check(4);
+        logic.check('4');
     }
 
     public void updateDisplayText(String text) {

@@ -1,14 +1,21 @@
 package com.mygames;
 
 import java.io.IOException;
-
 import javafx.fxml.FXML;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
 
 public class SecondaryController {
 
     @FXML
     private Text displayText;
+
+    @FXML
+    private Text scoreText;
+
+    @FXML
+    private Rectangle colorRectangle;
 
     private Logic logic;
 
@@ -45,5 +52,13 @@ public class SecondaryController {
 
     public void updateDisplayText(String text) {
         displayText.setText(text);
+    }
+
+    public void updateScoreText(String text) {
+        scoreText.setText(text);
+    }
+
+    public void updateRectangleColor(Color color) {
+        colorRectangle.setFill(color);
     }
 }

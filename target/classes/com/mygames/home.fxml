@@ -6,13 +6,26 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mygames.HomeController">
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mygames.HomeController">
    <children>
       <Label text="Memory Match Game">
          <font>
             <Font name="Avenir Next Regular" size="48.0" />
          </font></Label>
-      <Button fx:id="primaryButton" onAction="#switchToSecondary" text="Easy Mode" />
+      <Button fx:id="EasyButton" onAction="#switchToEasy" text="Easy Mode">
+         <font>
+            <Font name="Avenir Next Regular" size="13.0" />
+         </font></Button>
+      <Button fx:id="MediumMode" layoutX="229.0" layoutY="120.0" onAction="#switchToMedium" text="Medium Mode">
+         <font>
+            <Font name="Avenir Next Regular" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="HardMode" layoutX="215.0" layoutY="168.0" onAction="#switchToHard" text="Hard Mode">
+         <font>
+            <Font name="Avenir Next Regular" size="13.0" />
+         </font>
+      </Button>
    </children>
    <padding>
       <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />

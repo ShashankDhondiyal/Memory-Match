@@ -7,7 +7,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
 
-public class EasyController {
+public class MediumController {
 
     @FXML
     private Text displayText;
@@ -18,11 +18,11 @@ public class EasyController {
     @FXML
     private Rectangle colorRectangle;
 
-    private EasyLogic logic;
+    private MediumLogic logic;
 
     @FXML
     public void initialize() {
-        logic = new EasyLogic(this);
+        logic = new MediumLogic(this);
         logic.generateRandomNumber();
     }
 
@@ -37,18 +37,43 @@ public class EasyController {
     }
 
     @FXML
-    private void ButtonYellowClick() {
+    private void ButtonOrangeClick() {
         logic.check('2');
     }
 
     @FXML
-    private void ButtonGreenClick() {
+    private void ButtonYellowClick() {
         logic.check('3');
     }
 
     @FXML
-    private void ButtonBlueClick() {
+    private void ButtonLimeClick() {
         logic.check('4');
+    }
+
+    @FXML
+    private void ButtonGreenClick() {
+        logic.check('5');
+    }
+
+    @FXML
+    private void ButtonDarkGreenClick() {
+        logic.check('6');
+    }
+
+    @FXML
+    private void ButtonSkyBlueClick() {
+        logic.check('7');
+    }
+
+    @FXML
+    private void ButtonBlueClick() {
+        logic.check('8');
+    }
+
+    @FXML
+    private void ButtonDarkBlueClick() {
+        logic.check('9');
     }
 
     public void updateDisplayText(String text) {

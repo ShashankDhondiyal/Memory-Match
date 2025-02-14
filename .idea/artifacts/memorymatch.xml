@@ -1,0 +1,31 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" build-on-make="true" name="memorymatch">
+    <output-path>$PROJECT_DIR$/out/artifacts/memorymatch</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="" />
+        <option name="description" value="" />
+        <option name="height" value="1000" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="icons">
+          <JavaFxApplicationIcons>
+            <option name="linuxIcon" value="$PROJECT_DIR$/Icons/icon.png" />
+            <option name="macIcon" value="$PROJECT_DIR$/Icons/icon.icns" />
+            <option name="windowsIcon" value="$PROJECT_DIR$/Icons/icon.ico" />
+          </JavaFxApplicationIcons>
+        </option>
+        <option name="msgOutputLevel" value="Verbose" />
+        <option name="nativeBundle" value="all" />
+        <option name="title" value="Memory Match" />
+        <option name="vendor" value="" />
+        <option name="version" value="" />
+        <option name="width" value="1000" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="memorymatch.jar">
+        <element id="module-output" name="memorymatch" />
+      </element>
+    </root>
+  </artifact>
+</component>
